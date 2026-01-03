@@ -10,7 +10,7 @@ if(isset($_POST['sub']))
 	 $select = "SELECT * FROM `login` WHERE email='$email'";
 	 $query = mysqli_query($conn, $select);
 	 $res = mysqli_fetch_array($query);
-	 
+
 	 $db_pass = $res['password'];
 	 $category = $res['category'];
 	 if($password == $db_pass)
